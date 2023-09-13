@@ -19,5 +19,8 @@
   "homepage": "https://github.com/MaciekWin3/azure-devops-blazor-extension#readme",
   "dependencies": {
     "azure-devops-extension-sdk": "^3.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0"
   }
 }
