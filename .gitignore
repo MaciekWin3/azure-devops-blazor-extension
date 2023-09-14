@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # dist (build folder)
 dist/
+
+# vsix files
+*.vsix

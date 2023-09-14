@@ -18,7 +18,7 @@
     }
   },
   "icons": {
-    "default": "img/world.png"
+    "default": "img/blazor.png"
   },
   "files": [
     {
@@ -59,8 +59,8 @@
       "properties": {
         "name": "Hello World!",
         "icon": {
-          "dark": "img/world.png",
-          "light": "img/world.png"
+          "dark": "img/blazor.png",
+          "light": "img/blazor.png"
         }
       }
     },
