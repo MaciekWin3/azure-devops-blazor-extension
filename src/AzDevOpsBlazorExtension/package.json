@@ -1,0 +1,26 @@
+{
+  "name": "azdevopsblazorextension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciekWin3/azure-devops-blazor-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaciekWin3/azure-devops-blazor-extension/issues"
+  },
+  "homepage": "https://github.com/MaciekWin3/azure-devops-blazor-extension#readme",
+  "dependencies": {
+    "azure-devops-extension-sdk": "^3.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0"
+  }
+}

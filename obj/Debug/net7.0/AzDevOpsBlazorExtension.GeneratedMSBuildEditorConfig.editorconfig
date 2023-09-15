@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AzDevOpsBlazorExtension
+build_property.RootNamespace = AzDevOpsBlazorExtension
+build_property.ProjectDir = C:\Users\macie\Repozytorium\AzDevOpsBlazorExtension2\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\macie\Repozytorium\AzDevOpsBlazorExtension2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/App.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXEFwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFBhZ2VzXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFBhZ2VzXEZldGNoRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFBhZ2VzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFNoYXJlZFxTdXJ2ZXlQcm9tcHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFNoYXJlZFxNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-wm2cqgr3az
+
+[C:/Users/macie/Repozytorium/AzDevOpsBlazorExtension2/src/AzDevOpsBlazorExtension/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = c3JjXEF6RGV2T3BzQmxhem9yRXh0ZW5zaW9uXFNoYXJlZFxOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-490bnh9u1f
