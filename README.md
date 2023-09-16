@@ -21,13 +21,13 @@ npm install
 
 ## Debug 🐞
 You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to build project with vss-extension.dev.json:
-```
 
 ## Build 🏗
 Finally, you can build the extension. To do so you can run build.ps1 script located in root folder of this project:
 ```
 ./build.ps1
 ```
+
 Script will build project in release mode and create .vsix file from dist folder (where builded project is located).
 
 ## Usefull resources 📚
