@@ -1,5 +1,11 @@
 ﻿# Azure Devops Blazor Extension
 
+## TODO 📝
+- [x] Enable debuging 
+- [ ] Fix wasm warning in browser console
+- [ ] Add custom template
+- [ ] Mudblazor?
+
 ## Prerequisites 📝
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [tfs-cli](https://github.com/Microsoft/tfs-cli)
@@ -20,7 +26,11 @@ npm install
 
 
 ## Debug 🐞
-You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to build project with vss-extension.dev.json:
+You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to run AzDevOpsBlazorExtension.DevServer. To do so, run the following command in your terminal in DevServer folder:
+```
+dotnet watch run --pathbase=/dist
+```
+This command will run project in watch mode. It means that every time you change something in your code, project will be recompiled. If you uploded dev version of your extension to Azure Devops it will listen to port 7251 on your localhost. Then every time you refresr page, you can see your change live on Azure DevOps.
 
 ## Build 🏗
 Finally, you can build the extension. To do so you can run build.ps1 script located in root folder of this project:
@@ -38,4 +48,5 @@ For more information about Azure DevOps extensions, see:
 ## Contriburtion 🤝
 
 This project welcomes contributions and suggestions.
+
 
