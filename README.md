@@ -44,6 +44,12 @@ Script will build project in release mode and create .vsix file from dist folder
 For more information about Azure DevOps extensions, see:
 - [Develop a web extension](https://learn.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops)
 - [Azure DevOps Extension Hot Reload and Debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug)
+- [Extension manifest reference](https://learn.microsoft.com/en-us/azure/devops/extend/develop/manifest?view=azure-devops)
+- [Extension samples](https://learn.microsoft.com/en-us/azure/devops/extend/develop/samples-overview?view=azure-devops&source=recommendations)
+- [azure-devops-extension-sdk](https://github.com/microsoft/azure-devops-extension-sdk)
+- [azure-devops-extension-sample](https://github.com/microsoft/azure-devops-extension-sample)
+- [tfs-cli](https://github.com/Microsoft/tfs-cli)
+
 
 ## Contriburtion 🤝
 
