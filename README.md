@@ -26,7 +26,7 @@ npm install
 
 
 ## Debug 🐞
-You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to run AzDevOpsBlazorExtension.DevServer. To do so, run the following command in your terminal in DevServer folder:
+You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to run AzDevOpsBlazorExtension with this command:
 ```
 dotnet watch run --pathbase=/dist
 ```
