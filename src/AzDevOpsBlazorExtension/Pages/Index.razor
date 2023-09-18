@@ -1,11 +1,29 @@
-﻿@page "/"
+﻿@using AzDevOpsBlazorExtension.Models;
+@using System.Text.Json;
+@inject IJSRuntime jsRuntime
+@page "/"
 @page "/index"
 @page "/index.html"
 
 <PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
+@if (user is not null)
+{
+    <h1>Hello, @user.DisplayName</h1>
+}
+else
+{
+    <h1>Hello, World!</h1>
+}
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code{
+    AzureDevOpsUser user = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await jsRuntime.InvokeAsync<AzureDevOpsUser>("getUser");
+    }
+}
+
+

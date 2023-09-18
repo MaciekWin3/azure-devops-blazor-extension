@@ -496,16 +496,19 @@ var dispatchEvent = function dispatchEvent(eventName, params) {
   var global = window;
   var evt;
   if (typeof global.CustomEvent === "function") {
-    evt = new global.CustomEvent(eventName, params);
+    evt = new global.CustomEvent(eventName, { detail: params });
   } else {
     params = params || {
       bubbles: false,
       cancelable: false
     };
-    evt = document.createEvent("CustomEvent");
-    evt.initCustomEvent(eventName, params.bubbles, params.cancelable, params.detail);
+    evt = new CustomEvent(eventName, {
+      bubbles: params.bubbles,
+      cancelable: params.cancelable,
+      detail: params.detail
+    });
   }
-  window.dispatchEvent(evt);
+  //window.dispatchEvent(evt);
 };
 function init(options) {
   return new Promise(function (resolve) {
