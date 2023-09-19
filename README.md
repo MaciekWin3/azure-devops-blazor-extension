@@ -21,8 +21,9 @@ To begin with, you need to clone the repository on your local machine. To do so,
 git clone https://github.com/MaciekWin3/azure-devops-blazor-extension
 ```
 
-Next, you need to install all dependencies. To do so, run the following command in your terminal:
+Next, you need to install all dependencies. To do so, run the following commands in your terminal:
 ```
+cd src/AzDevOpsBlazorExtension/
 npm install
 ```
 

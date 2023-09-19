@@ -24,7 +24,14 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        user = await jsRuntime.InvokeAsync<AzureDevOpsUser>("getUser");
+        try
+        {
+            user = await jsRuntime.InvokeAsync<AzureDevOpsUser>("getUser");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Cannot get user: " + ex.Message);
+        }
     }
 }
 
