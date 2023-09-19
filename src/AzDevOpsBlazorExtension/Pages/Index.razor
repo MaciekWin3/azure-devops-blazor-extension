@@ -8,14 +8,16 @@
 <PageTitle>Index</PageTitle>
 @if (user is not null)
 {
-    <h1>Hello, @user.DisplayName</h1>
+    <h1>Hello, @user.DisplayName!</h1>
 }
 else
 {
     <h1>Hello, World!</h1>
 }
 
-Welcome to your new app.
+<p>
+    Welcome to your new Azure DevOps extension!
+</p>
 
 @code{
     AzureDevOpsUser user = null!;

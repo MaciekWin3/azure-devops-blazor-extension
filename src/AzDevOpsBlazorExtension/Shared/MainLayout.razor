@@ -1,13 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
+    <div class="sidebar" style="@IconMenuCssClass">
+        <NavMenu ShowIconMenu="ToggleIconMenu" />
     </div>
 
     <main>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <a href="https://github.com/MaciekWin3/azure-devops-blazor-extension" target="_blank">About</a>
         </div>
 
         <article class="content px-4">
@@ -15,3 +15,13 @@
         </article>
     </main>
 </div>
+
+@code {
+    private bool IconMenuActive { get; set; }
+    private string? IconMenuCssClass => IconMenuActive ? "width: 80px;" : null;
+
+    protected void ToggleIconMenu(bool iconMenuActive)
+    {
+        IconMenuActive = iconMenuActive;
+    }
+}
