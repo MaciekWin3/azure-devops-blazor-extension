@@ -7,6 +7,19 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.bottom-row {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    text-align: right;
+    width: 100%;
+    padding-right: 28px;
+}
+
+.icon-menu-arrow {
+    text-align: right;
+}
+
 .navbar-brand {
     font-size: 1.1rem;
 }
@@ -40,15 +53,15 @@
         line-height: 3rem;
     }
 
-.nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
+        .nav-item ::deep a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+        }
 
-.nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
+        .nav-item ::deep a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
 
 @media (min-width: 641px) {
     .navbar-toggler {
@@ -59,10 +72,10 @@
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
-    
-    .nav-scrollable {
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+    .bottom-row {
+        display: block;
     }
 }
