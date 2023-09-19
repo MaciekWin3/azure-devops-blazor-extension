@@ -11,6 +11,10 @@ if (-not (Test-Path -Path $destinationFolder -PathType Container)) {
 Copy-Item -Path "$publishFolder\*" -Destination $destinationFolder -Recurse -Force | Out-Null
 Write-Host "Coping project files done..."
 Write-Host "Creating extension..."
-tfx extension create 
+$extensionCommand = "tfx extension create"
+if ($args -contains "--dev") {
+    $extensionCommand += " --manifest-globs vss-extension.dev.json"
+}
+Invoke-Expression $extensionCommand
 Write-Host "Creating extension done."
 
