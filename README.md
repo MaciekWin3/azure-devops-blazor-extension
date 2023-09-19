@@ -1,9 +1,5 @@
 ﻿# Azure Devops Blazor Extension
 
-Build Azure Devops extension using Blazor WebAssembly.
-
-## About 📖
-
 Developing Azure DevOps extensions can be challenging. The documentation provided is not always extensive, and the examples may not always be up to date (for instance, I needed to make some adjustments to the Azure DevOps Extension SDK to make it compatible with my application). This project aims to address this gap by creating a straightforward Azure DevOps extension using Blazor WebAssembly. This has been a long-awaited request from developers who prefer using C# and Blazor over the suggested React and TypeScript.
 
 The project is built upon the fundamental Blazor template, making it easy for developers to get started. Additionally, the application supports hot reload to streamline development and debugging processes. The application also includes a script that simplifies extension creation.
