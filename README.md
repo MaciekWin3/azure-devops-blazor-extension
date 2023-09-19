@@ -1,10 +1,18 @@
 ﻿# Azure Devops Blazor Extension
 
-## TODO 📝
-- [x] Enable debuging 
-- [ ] Fix wasm warning in browser console
-- [ ] Add custom template
-- [ ] Mudblazor?
+Build Azure Devops extension using Blazor WebAssembly.
+
+## About 📖
+
+Developing Azure DevOps extensions can be challenging. The documentation provided is not always extensive, and the examples may not always be up to date (for instance, I needed to make some adjustments to the Azure DevOps Extension SDK to make it compatible with my application). This project aims to address this gap by creating a straightforward Azure DevOps extension using Blazor WebAssembly. This has been a long-awaited request from developers who prefer using C# and Blazor over the suggested React and TypeScript.
+
+The project is built upon the fundamental Blazor template, making it easy for developers to get started. Additionally, the application supports hot reload to streamline development and debugging processes. The application also includes a script that simplifies extension creation.
+
+All the necessary instructions for building the application, along with supplementary resources, are provided within the README for your convenience.
+
+
+## Demo 🎥
+![Azure Devops Blazor Extension Demo](./assets/demo.gif)
 
 ## Prerequisites 📝
 - [.NET](https://dotnet.microsoft.com/en-us/)
@@ -22,15 +30,15 @@ Next, you need to install all dependencies. To do so, run the following command 
 npm install
 ```
 
-## Development 🛠
+## Development & Debugging 🛠🐞
+This project is based on the basic Blazor template to simplify entry into the project. You can develop and debug it like a regular Blazor application. If you want to test it already uploaded to Azure DevOps, also benefiting from hot reload, you should first build the development version of the project and upload it to your Azure DevOps instance (for more info on that look at build section).
 
-
-## Debug 🐞
-You can debug and develop your extension locally. You just need to run project with dotnet. If you want to run project in Azure DevOps environment, you need to run AzDevOpsBlazorExtension with this command:
+After that, the extension will listen on the port specified in the manifest (by default 7251). To  run your project and connect to your Azure Devops, use this command:
 ```
 dotnet watch run --pathbase=/dist
 ```
-This command will run project in watch mode. It means that every time you change something in your code, project will be recompiled. If you uploded dev version of your extension to Azure Devops it will listen to port 7251 on your localhost. Then every time you refresr page, you can see your change live on Azure DevOps.
+
+This command will run your application in watch mode, automatically reloading it when you make changes to the code. Changing the 'pathbase' will enable access to the application from the Azure DevOps instance (the application expects all endpoints to be after '/dist')
 
 ## Build 🏗
 Finally, you can build the extension. To do so you can run build.ps1 script located in root folder of this project:
@@ -39,6 +47,11 @@ Finally, you can build the extension. To do so you can run build.ps1 script loca
 ```
 
 Script will build project in release mode and create .vsix file from dist folder (where builded project is located).
+
+If you want to build project for development purposes, you can run build.ps1 script with --dev flag:
+```
+./build.ps1 --dev
+```
 
 ## Usefull resources 📚
 For more information about Azure DevOps extensions, see:
