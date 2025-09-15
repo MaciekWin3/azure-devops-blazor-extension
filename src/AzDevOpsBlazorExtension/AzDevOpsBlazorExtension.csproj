@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.6" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.17" />
+  <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.20" />
   </ItemGroup>
 
 </Project>
