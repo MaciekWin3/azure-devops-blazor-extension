@@ -21,6 +21,6 @@
     "azure-devops-extension-sdk": "^3.1.2"
   },
   "devDependencies": {
-    "eslint": "^8.49.0"
+    "eslint": "^10.0.2"
   }
 }
